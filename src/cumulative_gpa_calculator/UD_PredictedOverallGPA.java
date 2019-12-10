@@ -15,7 +15,7 @@ public class UD_PredictedOverallGPA
         Gradebook gradeBook = new Gradebook();
         HashMap<String, ArrayList<Double>> courses = null;
         
-        // Adds FRESHMAN year grades to the grade book
+        // Method calls add each semester's grades to the grade book
         semester1Grades(gradeBook);
         
         System.out.println("Total Quality (Credit) Hours: " + gradeBook.getTotalCreditHours());
