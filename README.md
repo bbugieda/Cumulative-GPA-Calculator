@@ -20,7 +20,7 @@ There are a few steps to add a new grades to a gradebook. Follow this guide to c
 1. Find the ```semester1Grades``` template method in ```UD_PredictedOverallGPA.java``` below the ```printCourses``` method:
 
 ```
-/**
+   /**
      * semester1Grades()
      * Adds all Semester 1 Grades into the requested grade book
      * @param gradeBook, the grade book to input grades
