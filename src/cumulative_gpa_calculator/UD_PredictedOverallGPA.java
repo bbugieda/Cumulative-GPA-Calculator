@@ -16,7 +16,7 @@ public class UD_PredictedOverallGPA
         HashMap<String, ArrayList<Double>> courses = null;
         
         // Adds FRESHMAN year grades to the grade book
-        fall2017Grades(gradeBook);
+        semester1Grades(gradeBook);
         
         System.out.println("Total Quality (Credit) Hours: " + gradeBook.getTotalCreditHours());
         System.out.println("Total Quality Points: " + gradeBook.getTotalQualityPoints());
@@ -60,12 +60,12 @@ public class UD_PredictedOverallGPA
      * 
      * @author bbugieda
      */
-    public static void fall2017Grades(Gradebook gradeBook) {
+    public static void semester1Grades(Gradebook gradeBook) {
         gradeBook.newGrade("EGGG 101", QualityPointValue.A, CreditHours.TWO);
-        gradeBook.newGrade("CISC 108", QualityPointValue.A_MINUS);
+        gradeBook.newGrade("CISC 108", QualityPointValue.A_MINUS, CreditHours.THREE);
         gradeBook.newGrade("MATH 241", QualityPointValue.A_MINUS, CreditHours.FOUR);
-        gradeBook.newGrade("ENGL 110", QualityPointValue.A);
-        gradeBook.newGrade("LEAD 100", QualityPointValue.A);
+        gradeBook.newGrade("ENGL 110", QualityPointValue.A, CreditHours.THREE);
+        gradeBook.newGrade("LEAD 100", QualityPointValue.A, CreditHours.THREE);
     }
     
 }
